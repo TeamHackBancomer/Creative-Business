@@ -1,3 +1,4 @@
+var latitude, longitude;
 window.onload = getLocation();
 
 function getLocation() {
@@ -8,6 +9,6 @@ function getLocation() {
     }
 }
 function showPosition(position) {
-    var position = position.coords.latitude +", "+ position.coords.longitude;
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
 }
-
