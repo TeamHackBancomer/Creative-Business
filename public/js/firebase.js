@@ -10,6 +10,7 @@ firebase.initializeApp(config);
 //database
 var database = firebase.database();
 var ref_user = database.ref('user');
+var latlng = [];
 
 function writeUserData(name, sex, age, monthly_income, credit_card, debit_card, lat, lng, business) {
   ref_user.push({
@@ -28,3 +29,15 @@ function writeUserData(name, sex, age, monthly_income, credit_card, debit_card, 
     window.location.href = 'thank.html';
   });
 }
+
+ref_user.on('child_added',function (snapshot) {
+    // var users = snapshot.val();
+    // console.log(snapshot.key);
+    // console.log(snapshot.val());
+    latlng.push({
+      key: snapshot.key,
+      lat: snapshot.val().lat,
+      lng: snapshot.val().lng
+    })
+
+})
