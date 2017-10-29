@@ -12,9 +12,9 @@ main {
 }
 #submit_button{
     background-color: #FCFFF5 !important;
-    color: #c51162 !important;
+    color: #1565c0  !important;
 }
 #submit_button:hover{
     background-color: #c51162;
-    color: #FCFFF5;
+    color: #1565c0 ;
 }
