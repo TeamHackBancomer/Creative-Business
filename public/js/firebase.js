@@ -23,6 +23,7 @@ function writeUserData(name, sex, age, monthly_income, credit_card, debit_card, 
     lng:            lng,
     business:       business
   }).then(function (message) {
+    $('#preloader-onsubmit').css('display','block');
     console.log(message,'message');
     window.location.href = 'thank.html';
   });
