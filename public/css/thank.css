@@ -1,3 +1,7 @@
 #thank{
     margin-top: 18em;
 }
+
+@media (min-width: 0px) and (max-width: 425px) {#thank{margin-top: 9em;}}
+@media (min-width: 426px) and (max-width: 768px) {#thank{margin-top: 13em;}}
+@media (min-width: 769px) and (max-width: 1024px){#thank{margin-top: 12em;}}
