@@ -3,11 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Marker Animations</title>
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/graphic.css">
-
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -25,24 +20,14 @@
     <script src="js/Chart.min.js" charset="utf-8"></script>
   </head>
   <body>
-    <header>
-      <!-- Navbar -->
-      <nav class="navbar absolute light blue darken-1">
-        <div class="nav-wrapper container">
-          <a href="index.html" class="brand-logo center"><strong>Creative Business</strong></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="form.html"><strong>Formulario</strong></a></li>
-          </ul>
-          <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
-        </div>
-      </nav>
-      <ul id="slide-out" class="side-nav">
-        <li><a href="index.html"><strong>Creative Business</strong></a></li>
-        <li><a href="graphic.html"><strong>Gráficas en tiempo real</strong></a></li>
-      </ul>
-    </header>
-      <div id="map"></div>
-        <canvas id="pie-chart" width="200" height="200"></canvas>
+
+    <div id="map"></div>
+    <div class="container row">
+        <canvas id="pie-chart" width="400" height="400"></canvas>
+    </div>
+    <div class="container row">
+        <canvas id="business" width="400" height="400"></canvas>
+    </div>
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script src="js/firebase.js" charset="utf-8"></script>
     <script src="js/map.js" charset="utf-8"></script>
