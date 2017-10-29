@@ -50,7 +50,7 @@ function writeUserData(name, sex, age, monthly_income, credit_card, debit_card, 
     debit_card:     debit_card,
     lat:            lat,
     lng:            lng,
-    shops:          shops
+    business:       business
   }).then(function (message) {
     console.log(message,'message');
   });
