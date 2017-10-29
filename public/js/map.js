@@ -13,14 +13,6 @@ function initMap() {
   });
 
   ref_user.on('child_added',function (snapshot) {
-      // var users = snapshot.val();
-      // console.log(snapshot.key);
-      // console.log(snapshot.val());
-      // latlng.push({
-      //   key: snapshot.key,
-      //   lat: snapshot.val().lat,
-      //   lng: snapshot.val().lng
-      // })
       var marker = new google.maps.Marker({
         map: map,
         draggable: true,
@@ -28,10 +20,7 @@ function initMap() {
         position: {lat: snapshot.val().lat, lng: snapshot.val().lng}
       });
       marker.addListener('click', toggleBounce);
-
   })
-
-
 }
 
 function toggleBounce() {
