@@ -6,18 +6,21 @@
 var marker;
 
 function initMap() {
+
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
+    zoom: 15,
     center: {lat: 19.4228107, lng: -99.1770548}
   });
 
-  marker = new google.maps.Marker({
-    map: map,
-    draggable: true,
-    animation: google.maps.Animation.DROP,
-    position: {lat: 19.4228107, lng: -99.1770658}
-  });
-  marker.addListener('click', toggleBounce);
+  ref_user.on('child_added',function (snapshot) {
+      var marker = new google.maps.Marker({
+        map: map,
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+        position: {lat: snapshot.val().lat, lng: snapshot.val().lng}
+      });
+      marker.addListener('click', toggleBounce);
+  })
 }
 
 function toggleBounce() {
