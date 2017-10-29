@@ -1,10 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Creative Business || App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Creative Business || Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="stylesheet" href="css/startup-materialize.min.css">-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar absolute light pink accent-4">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><i class="icon-diamond"></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html"><strong>Creative Business</strong></a></li>
+                    <li><a href="graphic.html"><strong>Gráficas en tiempo real</strong></a></li>
+                </ul>
+            </div>
+            <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons black-text">menu</i></a>
+        </nav>
+        <ul id="slide-out" class="side-nav">
+            <li><a href="index.html"><strong>Creative Business</strong></a></li>
+            <li><a href="graphic.html"><strong>Gráficas en tiempo real</strong></a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="center">Formulario:</h1>
+            <h4 class="center">En este formulario llenaras las datos para tu zona</h4>
+        </div>
+        <hr>
+        <div class="container">
+            <form class="black-text">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate black-text">
+                                <label for="first_name" data-error="wrong" data-success="right">Nombre(s)</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name" data-error="wrong" data-success="right">Apellidos</label>
+                            </div>
+                            <div class="input-field inline col s6">
+                                <input id="email" type="email" class="validate black-text">
+                                <label for="email" data-error="wrong" data-success="right">Email</label>
+                            </div>
+                            <div class="input-field inline col s6">
+                                <input id="age" type="number" class="validate black-text">
+                                <label for="age" data-error="wrong" data-success="right">Edad</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="" disabled selected>Escoje tu sexo</option>
+                                    <option value="1">Hombre</option>
+                                    <option value="2">Mujer</option>
+                                    <option value="3">No especificado</option>
+                                </select>
+                                <label>Sexo</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <select id="card">
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="1">Crédito</option>
+                                    <option value="2">Débito</option>
+                                    <option value="3">Ambas</option>
+                                </select>
+                                <label>Utilizas tarjeta de crédito o débito</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="date" type="date" class="datepicker">
+                                <label for="date">Ultima vez utilizada la targeta</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="ingreso" type="number" class="validate black-text">
+                                <label for="ingreso" data-success="right">Ingreso Mensual</label>
+                            </div>
+                            <div class="input-field col s6 push-s3">
+                                <select id="business">
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="1">Miscelanea</option>
+                                    <option value="2">Farmacia</option>
+                                    <option value="3">Oxxo</option>
+                                    <option value="4">Veterinaria</option>
+                                    <option value="5">Fruteria</option>
+                                    <option value="6">Médico</option>
+                                    <option value="7">Odontologo</option>
+                                    <option value="8">Banco</option>
+                                    <option value="9">Expendedora</option>
+                                    <option value="10">Mercado</option>
+                                    <option value="11">Tlapalería</option>
+                                </select>
+                                <label>Tiendas o establecimientos que hagan falta</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="page-footer pink accent-4">
+        <div class="container row white-text">
+            <div class="col s6 m3">
+                <img class="materialize-logo" src="images/materialize-teal.png" alt="">
+                <p>Made with love by Materialize.</p>
+            </div>
+            <div class="col s6 m3">
+                <h5>About</h5>
+                <ul>
+                    <li class="grey-text text-lighten-5"><a href="#!">Blog</a></li>
+                    <li><a href="#!">Pricing</a></li>
+                    <li><a href="#!">Docs</a></li>
+                </ul>
+            </div>
+            <div class="col s6 m3">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="#!">Community</a></li>
+                    <li><a href="#!">Subscribe</a></li>
+                    <li><a href="#!">Email</a></li>
+                </ul>
+            </div>
+            <div class="col s6 m3">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="#!">Twitter</a></li>
+                    <li><a href="#!">Facebook</a></li>
+                    <li><a href="#!">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <!-- External libraries -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOReMN15YiVTD2pQiPBL0nmo4nOGkyaPM&libraries=places" async></script>
+    <script src="js/imagesloaded.pkgd.min.js" async></script>
+    <script src="js/masonry.pkgd.min.js" async></script>
+    <script src="js/TweenMax.min.js" async></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js" async></script>
+    <script src="js/location.js" async></script>
+
+    <!-- Initialization script -->
+    <script src="js/startup.js"></script>
+    <script src="js/init.js"></script>
 </body>
 </html>
