@@ -10,7 +10,6 @@ firebase.initializeApp(config);
 //database
 var database = firebase.database();
 var ref_user = database.ref('user');
-var latitude, longitude;
 
 function submit() {
   name = $('#first_name').val();
@@ -53,20 +52,6 @@ function writeUserData(name, sex, age, monthly_income, credit_card, debit_card, 
     business:       business
   }).then(function (message) {
     console.log(message,'message');
+    window.location.href = 'thank.html';
   });
-}
-
-
-window.onload = getLocation();
-
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    }
-}
-function showPosition(position) {
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
 }
