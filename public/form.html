@@ -37,7 +37,7 @@
     <main>
         <div class="container">
             <h1 class="center">Formulario:</h1>
-            <h4 class="center">En este formulario llenaras las datos para tu zona</h4>
+            <h4 class="center">Se utilizará tu ubicación con fines estadisticos.</h4>
         </div>
         <hr>
         <div class="container">
@@ -47,22 +47,14 @@
                         <div class="row">
                             <div class="input-field col s12 m12 l6">
                                 <input id="first_name" type="text" class="validate black-text">
-                                <label for="first_name" data-error="wrong" data-success="right">Nombre(s)</label>
-                            </div>
-                            <div class="input-field col s12 m12 l6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name" data-error="wrong" data-success="right">Apellidos</label>
-                            </div>
-                            <div class="input-field inline col s12 m12 l6">
-                                <input id="email" type="email" class="validate black-text">
-                                <label for="email" data-error="wrong" data-success="right">Email</label>
+                                <label for="first_name" data-error="wrong" data-success="right">Nombre</label>
                             </div>
                             <div class="input-field inline col s12 m12 l6">
                                 <input id="age" type="number" class="validate black-text">
                                 <label for="age" data-error="wrong" data-success="right">Edad</label>
                             </div>
                             <div class="input-field col s12 m12 l6">
-                                <select>
+                                <select id="sex">
                                     <option value="" disabled selected>Escoje tu sexo</option>
                                     <option value="1">Hombre</option>
                                     <option value="2">Mujer</option>
@@ -76,37 +68,33 @@
                                     <option value="1">Crédito</option>
                                     <option value="2">Débito</option>
                                     <option value="3">Ambas</option>
+                                    <option value="4">Ninguna</option>
                                 </select>
                                 <label>Utilizas tarjeta de crédito o débito</label>
                             </div>
                             <div class="input-field col s12 m12 l6">
-                                <input id="date" type="date" class="datepicker">
-                                <label for="date">Ultima vez utilizada la targeta</label>
-                            </div>
-                            <div class="input-field col s12 m12 l6">
                                 <input id="ingreso" type="number" class="validate black-text">
-                                <label for="ingreso" data-success="right">Ingreso Mensual</label>
+                                <label for="ingreso" data-success="right">Ingreso Mensual (Solo numeros)</label>
                             </div>
                             <div class="input-field col s12 m12 l6 push-l3">
                                 <select id="business">
                                     <option value="" disabled selected>Selecciona una opción</option>
-                                    <option value="1">Miscelanea</option>
+                                    <option value="1">Supermercado</option>
                                     <option value="2">Farmacia</option>
-                                    <option value="3">Oxxo</option>
-                                    <option value="4">Veterinaria</option>
-                                    <option value="5">Fruteria</option>
+                                    <option value="3">Tiendas de Electronicos</option>
+                                    <option value="4">Cine</option>
+                                    <option value="5">Escuela</option>
                                     <option value="6">Médico</option>
-                                    <option value="7">Odontologo</option>
+                                    <option value="7">Restaurantes</option>
                                     <option value="8">Banco</option>
                                     <option value="9">Expendedora</option>
-                                    <option value="10">Mercado</option>
-                                    <option value="11">Tlapalería</option>
+                                    <option value="10">Bares</option>
                                 </select>
-                                <label>Tiendas o establecimientos que hagan falta</label>
+                                <label>¿Qué negocios o establecimientos carecen en tu zona?</label>
                             </div>
                         </div>
                         <div class="row">
-                            <button class="btn waves-effect waves-light center col push-s4 push-m5" id="submit_button" type="submit">Enviar
+                            <button class="btn waves-effect waves-light center col push-s4 push-m5" id="submit_button">Enviar
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -117,21 +105,6 @@
     </main>
     <footer class="page-footer  blue darken-1">
         <div class="container row white-text">
-            <div class="col s12 m4">
-                <h5>About</h5>
-                <ul>
-                    <li><a href="#!" class="grey-text text-lighten-4">Blog</a></li>
-                    <li><a href="#!" class="grey-text text-lighten-4">Community</a></li>
-                    <li><a href="#!" class="grey-text text-lighten-4">Subscribe</a></li>
-                </ul>
-            </div>
-            <div class="col s12 m4">
-                <h5>Connect</h5>
-                <ul>
-
-                    <li><a href="#!" class="grey-text text-lighten-4">Email</a></li>
-                </ul>
-            </div>
             <div class="col s12 m4">
                 <h5>Contact</h5>
                 <ul>
@@ -145,6 +118,10 @@
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="js/firebase.js" charset="utf-8"></script>
 
     <!-- External libraries -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOReMN15YiVTD2pQiPBL0nmo4nOGkyaPM&libraries=places" async></script>
@@ -160,5 +137,6 @@
     <script src="js/startup.js"></script>
     <script src="js/firebase.js" charset="utf-8"></script>
     <script src="js/init.js"></script>
+
 </body>
 </html>
