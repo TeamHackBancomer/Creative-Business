@@ -1,36 +1,36 @@
-[debug] [2017-10-29T13:36:55.701Z] ----------------------------------------------------------------------
-[debug] [2017-10-29T13:36:55.703Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2017-10-29T13:36:55.703Z] CLI Version:   3.13.1
-[debug] [2017-10-29T13:36:55.703Z] Platform:      linux
-[debug] [2017-10-29T13:36:55.703Z] Node Version:  v8.4.0
-[debug] [2017-10-29T13:36:55.703Z] Time:          Sun Oct 29 2017 07:36:55 GMT-0600 (CST)
-[debug] [2017-10-29T13:36:55.703Z] ----------------------------------------------------------------------
+[debug] [2017-10-29T19:36:45.569Z] ----------------------------------------------------------------------
+[debug] [2017-10-29T19:36:45.571Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-10-29T19:36:45.571Z] CLI Version:   3.13.1
+[debug] [2017-10-29T19:36:45.571Z] Platform:      linux
+[debug] [2017-10-29T19:36:45.571Z] Node Version:  v8.4.0
+[debug] [2017-10-29T19:36:45.571Z] Time:          Sun Oct 29 2017 13:36:45 GMT-0600 (CST)
+[debug] [2017-10-29T19:36:45.571Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-10-29T13:36:55.711Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-10-29T13:36:55.711Z] > authorizing via signed-in user
-[debug] [2017-10-29T13:36:55.712Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-10-29T13:36:55.712Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/JoBIiBYqNQJn8BlQtHRyLkJ4r1-MjNecnn70ow23qGE',
+[debug] [2017-10-29T19:36:45.579Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-29T19:36:45.579Z] > authorizing via signed-in user
+[debug] [2017-10-29T19:36:45.580Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-29T19:36:45.580Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/JoBIiBYqNQJn8BlQtHRyLkJ4r1-MjNecnn70ow23qGE',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Sun Oct 29 2017 07:36:55 GMT-0600 (CST)
-[debug] [2017-10-29T13:36:55.993Z] <<< HTTP RESPONSE 200
-[debug] [2017-10-29T13:36:56.043Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/creative-business-hb  
- Sun Oct 29 2017 07:36:56 GMT-0600 (CST)
-[debug] [2017-10-29T13:36:56.929Z] <<< HTTP RESPONSE 200
-[debug] [2017-10-29T13:36:56.930Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/creative-business-hb/tokens  
- Sun Oct 29 2017 07:36:56 GMT-0600 (CST)
-[debug] [2017-10-29T13:36:57.561Z] <<< HTTP RESPONSE 200
+ Sun Oct 29 2017 13:36:45 GMT-0600 (CST)
+[debug] [2017-10-29T19:36:45.895Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-29T19:36:45.941Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/creative-business-hb  
+ Sun Oct 29 2017 13:36:45 GMT-0600 (CST)
+[debug] [2017-10-29T19:36:46.824Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-29T19:36:46.826Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/creative-business-hb/tokens  
+ Sun Oct 29 2017 13:36:46 GMT-0600 (CST)
+[debug] [2017-10-29T19:36:47.569Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/skrillexmau/develop/bbva bancomer_hack/Creative-Business'...
 [info] 
-[debug] [2017-10-29T13:36:57.565Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/creative-business-hb  
- Sun Oct 29 2017 07:36:57 GMT-0600 (CST)
-[debug] [2017-10-29T13:36:57.979Z] <<< HTTP RESPONSE 200
-[debug] [2017-10-29T13:36:57.980Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/487883854645/clients/_:getWebAppConfig  
- Sun Oct 29 2017 07:36:57 GMT-0600 (CST)
-[debug] [2017-10-29T13:36:58.385Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-29T19:36:47.574Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/creative-business-hb  
+ Sun Oct 29 2017 13:36:47 GMT-0600 (CST)
+[debug] [2017-10-29T19:36:48.293Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-29T19:36:48.294Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/487883854645/clients/_:getWebAppConfig  
+ Sun Oct 29 2017 13:36:48 GMT-0600 (CST)
+[debug] [2017-10-29T19:36:49.339Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 

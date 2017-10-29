@@ -26,3 +26,7 @@ function submit() {
 $('#submit_button').on('click', function () {
   submit();
 });
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+});
