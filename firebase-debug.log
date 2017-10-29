@@ -1,0 +1,28 @@
+[debug] [2017-10-29T11:29:20.326Z] ----------------------------------------------------------------------
+[debug] [2017-10-29T11:29:20.327Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-10-29T11:29:20.327Z] CLI Version:   3.13.1
+[debug] [2017-10-29T11:29:20.327Z] Platform:      linux
+[debug] [2017-10-29T11:29:20.328Z] Node Version:  v8.4.0
+[debug] [2017-10-29T11:29:20.328Z] Time:          Sun Oct 29 2017 05:29:20 GMT-0600 (CST)
+[debug] [2017-10-29T11:29:20.328Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-29T11:29:20.336Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-29T11:29:20.336Z] > authorizing via signed-in user
+[debug] [2017-10-29T11:29:20.338Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/creative-business-hb  
+ Sun Oct 29 2017 05:29:20 GMT-0600 (CST)
+[debug] [2017-10-29T11:29:20.839Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-29T11:29:20.840Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/creative-business-hb/tokens  
+ Sun Oct 29 2017 05:29:20 GMT-0600 (CST)
+[debug] [2017-10-29T11:29:21.501Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/skrillexmau/develop/bbva bancomer_hack/Creative-Business'...
+[info] 
+[debug] [2017-10-29T11:29:21.506Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/creative-business-hb  
+ Sun Oct 29 2017 05:29:21 GMT-0600 (CST)
+[debug] [2017-10-29T11:29:22.019Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-29T11:29:22.020Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/487883854645/clients/_:getWebAppConfig  
+ Sun Oct 29 2017 05:29:22 GMT-0600 (CST)
+[debug] [2017-10-29T11:29:22.564Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

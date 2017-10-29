@@ -1,65 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Basic Elements - Startup</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.6.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.6.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.6.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.6.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.6.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="css/startup-materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-solid-transition dark">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><i class="icon-diamond"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="form.html">Formulario</a></li>
+          <li><a href="graphic.html">Gráficas en tiempo real</a></li>
+        </ul>
+      </div>
+      <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons black-text">menu</i></a>
+    </nav>
+    <ul id="slide-out" class="side-nav">
+      <li><a href="form.html">Formulario</a></li>
+      <li><a href="graphic.html">Gráficas en tiempo real</a></li>
+    </ul>
+
+    <div class="section header">
+      <img class="background bone" src="images/ideas.png" alt="">
+      <div class="header-wrapper row valign-wrapper">
+        <div class="col s12 pink-text text-accent-4">
+          <h1>Creative Business8</h1>
+          <span class="tagline pink accent-4"><h2>Enfoca, ubica, crece.</h2></span>
+          <button class="read-more"><i class="icon-caret-down"></i></button>
+        </div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Features -->
+    <div class="section valign-wrapper white">
+      <div class="container">
+        <div class="row">
+          <div class="col s12"><h2 class="section-title">Caracteristicas... </h2></div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-light-bulb"></i></h4>
+            <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-bolt"></i></h4>
+            <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-rocket"></i></h4>
+            <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-settings"></i></h4>
+            <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-umbrella"></i></h4>
+            <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-compass"></i></h4>
+            <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <!-- Clients -->
+    <div class="section white clients">
+      <div class="container">
+        <h2 class="section-title">Conectamos con... </h2>
+      </div>
+      <div class="row">
+        <a href="#!" class="col s12 m6 l4 client black">
+          <img class="logo" src="http://placehold.it/128x128" alt="google">
+          <span class="title">Google</span>
+        </a>
+        <a href="#!" class="col s12 m6 l4 client yellow">
+          <img class="logo" src="http://placehold.it/128x128" alt="snapchat">
+          <span class="title">Snapchat</span>
+        </a>
+        <a href="#!" class="col s12 m6 l4 client light-blue lighten-4">
+          <img class="logo" src="http://placehold.it/128x128" alt="messenger">
+          <span class="title">Messenger</span>
+        </a>
+        <a href="#!" class="col s12 m6 l4 client red lighten-4">
+          <img class="logo" src="http://placehold.it/128x128" alt="pinterest">
+          <span class="title">Pinterest</span>
+        </a>
+        <a href="#!" class="col s12 m6 l4 client pink accent-1">
+          <img class="logo" src="http://placehold.it/128x128" alt="dribbble">
+          <span class="title">Dribbble</span>
+        </a>
+        <a href="#!" class="col s12 m6 l4 client green accent-3">
+          <img class="logo" src="http://placehold.it/128x128" alt="medium">
+          <span class="title">Medium</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Google Maps -->
+    <div class="section google-map"></div>
+
+    <!-- Contact Us -->
+    <div class="section white valign-wrapper">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col s12"><h2 class="section-title">Contact Us</h2></div>
+            <div class="input-field col s6">
+              <input id="first_name" type="text">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text">
+              <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Message</label>
+              <a class="waves-effect waves-light btn-large dark">Enviar</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer dark">
+      <div class="container">
+        <div class="row">
+          <div class="col s6 m3">
+            <img class="materialize-logo" src="images/materialize-teal.png" alt="">
+            <p>Made with love by Materialize.</p>
+          </div>
+          <div class="col s6 m3">
+            <h5>About</h5>
+            <ul>
+              <li><a href="#!">Blog</a></li>
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Docs</a></li>
+            </ul>
+          </div>
+          <div class="col s6 m3">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#!">Community</a></li>
+              <li><a href="#!">Subscribe</a></li>
+              <li><a href="#!">Email</a></li>
+            </ul>
+          </div>
+          <div class="col s6 m3">
+            <h5>Contact</h5>
+            <ul>
+              <li><a href="#!">Twitter</a></li>
+              <li><a href="#!">Facebook</a></li>
+              <li><a href="#!">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <!-- External libraries -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOReMN15YiVTD2pQiPBL0nmo4nOGkyaPM&libraries=places" async></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js" async></script>
+    <script src="js/masonry.pkgd.min.js" async></script>
+    <script src="js/TweenMax.min.js" async></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js" async></script>
+
+    <!-- Initialization script -->
+    <script src="js/startup.js"></script>
+    <script src="js/firebase.js" charset="utf-8"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>

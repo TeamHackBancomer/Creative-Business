@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creative Business || Graphs</title>
+</head>
+<body>
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+
+<!-- External libraries -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOReMN15YiVTD2pQiPBL0nmo4nOGkyaPM&libraries=places" async></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="js/imagesloaded.pkgd.min.js" async></script>
+<script src="js/masonry.pkgd.min.js" async></script>
+<script src="js/TweenMax.min.js" async></script>
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/animation.gsap.min.js" async></script>
+<script src="js/location.js" async></script>
+<script src="js/Chart.min.js"></script>
+
+<!-- Initialization script -->
+<script src="js/startup.js"></script>
+<script src="js/firebase.js" charset="utf-8"></script>
+<script src="js/init.js"></script>
+</body>
+</html>
