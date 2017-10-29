@@ -10,3 +10,11 @@ main {
     background-color: #eeeeee;
     color: black;
 }
+#submit_button{
+    background-color: #FCFFF5 !important;
+    color: #c51162 !important;
+}
+#submit_button:hover{
+    background-color: #c51162;
+    color: #FCFFF5;
+}
