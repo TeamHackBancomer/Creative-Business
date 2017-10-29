@@ -8,6 +8,7 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
 }
+
 function showPosition(position) {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
